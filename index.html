@@ -200,18 +200,27 @@
   .nav-inner{ max-width:var(--maxw); margin:0 auto; padding:0 28px; height:68px; display:flex; align-items:center; justify-content:space-between; }
   .brand{ display:flex; align-items:center; gap:10px; font-family:'Space Grotesk'; font-weight:600; font-size:16px; }
   .brand .chip{
-    width:30px; height:30px; border-radius:7px;
-    background:linear-gradient(135deg, var(--accent-soft), transparent);
-    border:1px solid var(--accent-line);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'JetBrains Mono'; font-size:13px; color:var(--accent-bright);
-  }
-  .brand .chip img{
-  width:100%;
-  height:100%;
+  width:36px;
+  height:36px;
+  border-radius:8px;
+  padding:0;
+  overflow:hidden;
+  background:var(--bg-panel-2);
+  border:1px solid var(--accent-line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:none;
+}
+
+.brand .chip img{
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
   object-fit:cover;
-  border-radius:6px;
+  object-position:center;
   display:block;
+  border-radius:7px;
 }
   nav.links{ display:flex; gap:2px; align-items:center; }
   nav.links a{
