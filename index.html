@@ -206,6 +206,13 @@
     display:flex; align-items:center; justify-content:center;
     font-family:'JetBrains Mono'; font-size:13px; color:var(--accent-bright);
   }
+  .brand .chip img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:6px;
+  display:block;
+}
   nav.links{ display:flex; gap:2px; align-items:center; }
   nav.links a{
     font-size:14px; color:var(--text-dim); text-decoration:none; padding:8px 14px; border-radius:6px;
@@ -489,7 +496,7 @@
   .project-visual svg{ width:100%; height:auto; max-height:120px; }
   .project-visual .pv-fallback{ width:100%; display:none; align-items:center; justify-content:center; }
   .project-visual .pv-img{
-    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:center
     transition:transform .5s cubic-bezier(.2,.7,.3,1), filter .3s ease;
     filter:saturate(0.96) contrast(1.02);
   }
@@ -655,7 +662,7 @@
 <header>
   <div class="nav-inner">
     <a href="#hero" class="brand" aria-label="Pratham Bharti — home">
-      <span class="chip">PB</span>
+      <span class="chip"><img src="profile.jpg" alt="Pratham Bharti"></span>
       Pratham Bharti
     </a>
     <nav class="links" id="navLinks">
